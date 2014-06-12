@@ -1,0 +1,2 @@
+BC: Changed table/column matching regexp to support sqlserver-style quotes 
+BC: Fixed primary key index creation for classes not inheriting directly from ActiveRecord::Base
