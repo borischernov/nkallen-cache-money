@@ -14,7 +14,7 @@ module Cash
         return [] if @expects_array && @ids.empty?
         raise ActiveRecord::RecordNotFound if @ids.empty?
 
-        super(:conditions => { :id => @ids.first })
+        super(:conditions => { @active_record.primary_key => @ids.first })
       end
 
       protected
